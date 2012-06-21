@@ -1,6 +1,10 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+syntax enable
+set background=dark
+colorscheme solarized
+
 "Set leader key
 let mapleader = ","
 filetype on  " Automatically detect file types.
@@ -18,11 +22,6 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
-" Color Scheme
-syntax enable
-set background=dark
-colorscheme solarized
-
 " alt+n or alt+p to navigate between entries in QuickFix
 map <silent> <m-p> :cp <cr>
 map <silent> <m-n> :cn <cr>
@@ -30,7 +29,6 @@ map <silent> <m-n> :cn <cr>
 " Change which file opens after executing :Rails command
 let g:rails_default_file='config/database.yml'
  
-syntax enable
 set smartindent
 
 set ts=2  " Tabs are 2 spaces

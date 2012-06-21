@@ -1,5 +1,4 @@
 set guioptions-=T
-colorscheme vividchalk
 
 "Size and Window Position
 set lines=40
